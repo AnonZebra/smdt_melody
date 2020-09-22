@@ -141,7 +141,7 @@
     </Routine>
     <Routine name="end_message">
       <TextComponent name="text_end">
-        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
