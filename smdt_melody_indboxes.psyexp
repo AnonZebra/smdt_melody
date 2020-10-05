@@ -48,7 +48,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="# check if response was correct or not&amp;#10;correct_index = trial_seq[trial_counter][2]&amp;#10;correct_name = tone_square_ls[correct_index].name&amp;#10;response_correct = correct_name in trial_mouse.clicked_name&amp;#10;&amp;#10;# check response time&amp;#10;trial_response_time = got_response_time - allowed_response_time&amp;#10;&amp;#10;# save the data&amp;#10;trials.addData('correct_name', correct_name)&amp;#10;trials.addData('clicked_name', '|'.join(trial_mouse.clicked_name))&amp;#10;trials.addData('response_correct', int(response_correct))&amp;#10;trials.addData('trial_response_time', trial_response_time)&amp;#10;&amp;#10;trial_counter += 1&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="# check if response was correct or not&amp;#10;correct_index = trial_seq[trial_counter][2]&amp;#10;correct_name = tone_square_ls[correct_index].name&amp;#10;response_correct = correct_name in trial_mouse.clicked_name&amp;#10;&amp;#10;# check response time&amp;#10;trial_response_time = got_response_time - allowed_response_time&amp;#10;&amp;#10;# save the data&amp;#10;trials.addData('correct_name', correct_name)&amp;#10;trials.addData('clicked_name', '|'.join(trial_mouse.clicked_name))&amp;#10;trials.addData('response_correct', int(response_correct))&amp;#10;trials.addData('trial_response_time', trial_response_time)&amp;#10;trials.addData('first_melody', trial_first_seq)&amp;#10;trials.addData('second_melody', trial_second_seq)&amp;#10;&amp;#10;trial_counter += 1&amp;#10;" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code" valType="code"/>
       </CodeComponent>
@@ -92,7 +92,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="I det här testet får du höra melodier. Du kommer att höra två melodier i varje uppgift. Inom varje par av melodier skiljer sig bara en ton.&amp;#10;&amp;#10;Din uppgift är att avgöra vid vilken position i melodierna som tonen skiljer sig. När melodierna spelats klart får du klicka med vänster musknapp på den position som du tror är den rätta.&amp;#10;&amp;#10;Klicka med vänster musknapp på texten nedanför när du läst är redo att börja.&amp;#10;" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="I det här testet får du höra melodier. Du kommer att höra två melodier i varje uppgift. Inom varje par av melodier skiljer sig bara en ton.&amp;#10;&amp;#10;Din uppgift är att avgöra vid vilken position i melodierna som tonen skiljer sig. När melodierna spelats klart får du klicka med vänster musknapp på den position som du tror är den rätta.&amp;#10;&amp;#10;Klicka med vänster musknapp på texten nedanför när du är redo att börja.&amp;#10;" valType="extendedStr"/>
         <Param name="units" updates="None" val="deg" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="30" valType="code"/>
       </TextComponent>
